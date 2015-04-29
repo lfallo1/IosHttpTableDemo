@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CustomTableViewDelegate.h"
 
 @interface ConnectionHelper : NSURLConnection
--(id)initWithRequest:(NSURLRequest *)request sender:(id<CustomTableViewReloader>)tableReloaderDelegate;
--(void)makeRequest;
+-(id)initWithRequest:(NSURLRequest *)request;
+-(void)makeRequestWithCallback:(void(^)(NSArray *))callback;
 @end

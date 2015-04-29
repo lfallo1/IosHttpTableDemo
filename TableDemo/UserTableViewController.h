@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CustomTableViewDelegate.h"
 
-@interface UserTableViewController : UITableViewController<CustomTableViewReloader>
+@interface UserTableViewController : UITableViewController
 
 @end

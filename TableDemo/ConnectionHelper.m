@@ -11,37 +11,32 @@
 @interface ConnectionHelper()
 @property NSMutableData *_data;
 @property NSURLRequest *request;
-@property id<CustomTableViewReloader> tableReloaderDelegate;
-
 @end
 
 @implementation ConnectionHelper
 
--(id)initWithRequest:(NSURLRequest *)request sender:(id<CustomTableViewReloader>)tableReloaderDelegate{
-    self.tableReloaderDelegate = tableReloaderDelegate;
-    self.request = request;
+-(id)initWithRequest:(NSURLRequest *)request {
+    self = [super initWithRequest:request delegate:self];
+    if(self){
+        self.request = request;
+    }
     return self;
 }
 
--(void)makeRequest{
-    [[NSURLConnection alloc]initWithRequest:self.request delegate:self];
-}
-
--(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
-    self._data = [[NSMutableData alloc]init];
-}
-
--(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
-    NSLog(@"fail");
-}
-
--(void)connection: (NSURLConnection *)connection didReceiveData:(NSData *)data {
-    [self._data appendData:data];
-}
-
--(void)connectionDidFinishLoading:(NSURLConnection *)connection{
-    NSArray *jsonArray = (NSArray *)[NSJSONSerialization JSONObjectWithData:self._data options:NSJSONReadingMutableContainers error:nil];
-    [self.tableReloaderDelegate reloadData:jsonArray];
+-(void)makeRequestWithCallback:(void (^)(NSArray *))callback{
+    [NSURLConnection sendAsynchronousRequest:self.request queue:[[NSOperationQueue alloc]init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        
+        //built in NSURLConnection callback
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+            //should be checking for errors before processing data
+            
+            //parse data into array
+            NSArray *jsonArray = (NSArray *)[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            
+            //custom callback used to update
+            callback(jsonArray);
+        });
+    }];
 }
 
 @end

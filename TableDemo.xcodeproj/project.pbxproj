@@ -9,13 +9,29 @@
 /* Begin PBXBuildFile section */
 		D210F3C61AE9BF4200C77E63 /* ConnectionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D210F3C51AE9BF4200C77E63 /* ConnectionHelper.m */; };
 		D210F3D11AE9DA9100C77E63 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D210F3D01AE9DA9100C77E63 /* User.m */; };
+		D23378E41AEAB119006D6F42 /* glyphicons-281-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = D23378E31AEAB119006D6F42 /* glyphicons-281-settings.png */; };
+		D23378E61AEAB38C006D6F42 /* settings_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D23378E51AEAB38C006D6F42 /* settings_logo.jpg */; };
+		D23378E81AEAB638006D6F42 /* glyphicons-4-user.png in Resources */ = {isa = PBXBuildFile; fileRef = D23378E71AEAB638006D6F42 /* glyphicons-4-user.png */; };
+		D23378EA1AEAB787006D6F42 /* glyphicons-40-notes.png in Resources */ = {isa = PBXBuildFile; fileRef = D23378E91AEAB787006D6F42 /* glyphicons-40-notes.png */; };
+		D23378ED1AEABC7E006D6F42 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23378EC1AEABC7E006D6F42 /* HomeViewController.m */; };
+		D23378EF1AEACE8D006D6F42 /* Spiderman.png in Resources */ = {isa = PBXBuildFile; fileRef = D23378EE1AEACE8D006D6F42 /* Spiderman.png */; };
+		D23379081AEB098C006D6F42 /* PostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23379071AEB098C006D6F42 /* PostsTableViewController.m */; };
+		D233790B1AEB0AE5006D6F42 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = D233790A1AEB0AE5006D6F42 /* Post.m */; };
+		D233790F1AEB0C71006D6F42 /* PostsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D233790E1AEB0C71006D6F42 /* PostsTableViewCell.m */; };
 		D23C57751AE9AD8700CD7DAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D23C57741AE9AD8700CD7DAA /* main.m */; };
 		D23C57781AE9AD8700CD7DAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D23C57771AE9AD8700CD7DAA /* AppDelegate.m */; };
-		D23C577E1AE9AD8700CD7DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23C577C1AE9AD8700CD7DAA /* Main.storyboard */; };
 		D23C57801AE9AD8700CD7DAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23C577F1AE9AD8700CD7DAA /* Images.xcassets */; };
 		D23C57831AE9AD8700CD7DAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23C57811AE9AD8700CD7DAA /* LaunchScreen.xib */; };
 		D23C578F1AE9AD8700CD7DAA /* TableDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D23C578E1AE9AD8700CD7DAA /* TableDemoTests.m */; };
 		D23C579A1AE9AF9000CD7DAA /* UserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23C57991AE9AF9000CD7DAA /* UserTableViewController.m */; };
+		D2499A981AEC1327002587D5 /* StopwatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2499A971AEC1327002587D5 /* StopwatchViewController.m */; };
+		D2499A9A1AEC136F002587D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2499A991AEC136F002587D5 /* Main.storyboard */; };
+		D2499A9C1AEC14AC002587D5 /* glyphicons-86-repeat.png in Resources */ = {isa = PBXBuildFile; fileRef = D2499A9B1AEC14AC002587D5 /* glyphicons-86-repeat.png */; };
+		D2499A9E1AEC14BB002587D5 /* glyphicons-174-play.png in Resources */ = {isa = PBXBuildFile; fileRef = D2499A9D1AEC14BB002587D5 /* glyphicons-174-play.png */; };
+		D2499AA01AEC14C5002587D5 /* glyphicons-176-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = D2499A9F1AEC14C5002587D5 /* glyphicons-176-stop.png */; };
+		D2499AA21AEC14D0002587D5 /* glyphicons-55-clock.png in Resources */ = {isa = PBXBuildFile; fileRef = D2499AA11AEC14D0002587D5 /* glyphicons-55-clock.png */; };
+		D2499AA41AEC1505002587D5 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D2499AA31AEC1505002587D5 /* background.png */; };
+		D2499AB91AEC44F0002587D5 /* background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2499AB81AEC44F0002587D5 /* background2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,15 +47,26 @@
 /* Begin PBXFileReference section */
 		D210F3C41AE9BF4200C77E63 /* ConnectionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionHelper.h; sourceTree = "<group>"; };
 		D210F3C51AE9BF4200C77E63 /* ConnectionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionHelper.m; sourceTree = "<group>"; };
-		D210F3C81AE9CBAD00C77E63 /* CustomTableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewDelegate.h; sourceTree = "<group>"; };
 		D210F3CF1AE9DA9100C77E63 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		D210F3D01AE9DA9100C77E63 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		D23378E31AEAB119006D6F42 /* glyphicons-281-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons-281-settings.png"; sourceTree = "<group>"; };
+		D23378E51AEAB38C006D6F42 /* settings_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = settings_logo.jpg; sourceTree = "<group>"; };
+		D23378E71AEAB638006D6F42 /* glyphicons-4-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons-4-user.png"; sourceTree = "<group>"; };
+		D23378E91AEAB787006D6F42 /* glyphicons-40-notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons-40-notes.png"; sourceTree = "<group>"; };
+		D23378EB1AEABC7E006D6F42 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D23378EC1AEABC7E006D6F42 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D23378EE1AEACE8D006D6F42 /* Spiderman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spiderman.png; sourceTree = "<group>"; };
+		D23379061AEB098C006D6F42 /* PostsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsTableViewController.h; sourceTree = "<group>"; };
+		D23379071AEB098C006D6F42 /* PostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsTableViewController.m; sourceTree = "<group>"; };
+		D23379091AEB0AE5006D6F42 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		D233790A1AEB0AE5006D6F42 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		D233790D1AEB0C71006D6F42 /* PostsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsTableViewCell.h; sourceTree = "<group>"; };
+		D233790E1AEB0C71006D6F42 /* PostsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsTableViewCell.m; sourceTree = "<group>"; };
 		D23C576F1AE9AD8700CD7DAA /* TableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23C57731AE9AD8700CD7DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D23C57741AE9AD8700CD7DAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D23C57761AE9AD8700CD7DAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D23C57771AE9AD8700CD7DAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D23C577D1AE9AD8700CD7DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D23C577F1AE9AD8700CD7DAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D23C57821AE9AD8700CD7DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D23C57881AE9AD8700CD7DAA /* TableDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +74,15 @@
 		D23C578E1AE9AD8700CD7DAA /* TableDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableDemoTests.m; sourceTree = "<group>"; };
 		D23C57981AE9AF9000CD7DAA /* UserTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewController.h; sourceTree = "<group>"; };
 		D23C57991AE9AF9000CD7DAA /* UserTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewController.m; sourceTree = "<group>"; };
+		D2499A961AEC1327002587D5 /* StopwatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopwatchViewController.h; sourceTree = "<group>"; };
+		D2499A971AEC1327002587D5 /* StopwatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopwatchViewController.m; sourceTree = "<group>"; };
+		D2499A991AEC136F002587D5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D2499A9B1AEC14AC002587D5 /* glyphicons-86-repeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons-86-repeat.png"; sourceTree = "<group>"; };
+		D2499A9D1AEC14BB002587D5 /* glyphicons-174-play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons-174-play.png"; sourceTree = "<group>"; };
+		D2499A9F1AEC14C5002587D5 /* glyphicons-176-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons-176-stop.png"; sourceTree = "<group>"; };
+		D2499AA11AEC14D0002587D5 /* glyphicons-55-clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons-55-clock.png"; sourceTree = "<group>"; };
+		D2499AA31AEC1505002587D5 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		D2499AB81AEC44F0002587D5 /* background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,21 +103,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D210F3C91AE9CD8500C77E63 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				D210F3C81AE9CBAD00C77E63 /* CustomTableViewDelegate.h */,
-			);
-			name = Protocols;
-			sourceTree = "<group>";
-		};
 		D210F3D21AE9DA9600C77E63 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				D210F3CF1AE9DA9100C77E63 /* User.h */,
 				D210F3D01AE9DA9100C77E63 /* User.m */,
+				D23379091AEB0AE5006D6F42 /* Post.h */,
+				D233790A1AEB0AE5006D6F42 /* Post.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		D233790C1AEB0C5E006D6F42 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D233790D1AEB0C71006D6F42 /* PostsTableViewCell.h */,
+				D233790E1AEB0C71006D6F42 /* PostsTableViewCell.m */,
+			);
+			name = TableViewCells;
 			sourceTree = "<group>";
 		};
 		D23C57661AE9AD8700CD7DAA = {
@@ -105,16 +144,15 @@
 		D23C57711AE9AD8700CD7DAA /* TableDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D2499A991AEC136F002587D5 /* Main.storyboard */,
+				D2499A951AEC12DE002587D5 /* ViewControllers */,
+				D233790C1AEB0C5E006D6F42 /* TableViewCells */,
+				D2C877961AEB4E3C004E46A3 /* TableViewControllers */,
+				D2C877951AEB4E13004E46A3 /* ConnectionUtilities */,
 				D210F3D21AE9DA9600C77E63 /* Model */,
-				D210F3C91AE9CD8500C77E63 /* Protocols */,
-				D23C57981AE9AF9000CD7DAA /* UserTableViewController.h */,
-				D23C57991AE9AF9000CD7DAA /* UserTableViewController.m */,
-				D23C577C1AE9AD8700CD7DAA /* Main.storyboard */,
 				D23C577F1AE9AD8700CD7DAA /* Images.xcassets */,
 				D23C57811AE9AD8700CD7DAA /* LaunchScreen.xib */,
 				D23C57721AE9AD8700CD7DAA /* Supporting Files */,
-				D210F3C41AE9BF4200C77E63 /* ConnectionHelper.h */,
-				D210F3C51AE9BF4200C77E63 /* ConnectionHelper.m */,
 			);
 			path = TableDemo;
 			sourceTree = "<group>";
@@ -122,6 +160,17 @@
 		D23C57721AE9AD8700CD7DAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2499AB81AEC44F0002587D5 /* background2.jpg */,
+				D2499AA31AEC1505002587D5 /* background.png */,
+				D2499AA11AEC14D0002587D5 /* glyphicons-55-clock.png */,
+				D2499A9F1AEC14C5002587D5 /* glyphicons-176-stop.png */,
+				D2499A9D1AEC14BB002587D5 /* glyphicons-174-play.png */,
+				D2499A9B1AEC14AC002587D5 /* glyphicons-86-repeat.png */,
+				D23378EE1AEACE8D006D6F42 /* Spiderman.png */,
+				D23378E91AEAB787006D6F42 /* glyphicons-40-notes.png */,
+				D23378E71AEAB638006D6F42 /* glyphicons-4-user.png */,
+				D23378E51AEAB38C006D6F42 /* settings_logo.jpg */,
+				D23378E31AEAB119006D6F42 /* glyphicons-281-settings.png */,
 				D23C57761AE9AD8700CD7DAA /* AppDelegate.h */,
 				D23C57771AE9AD8700CD7DAA /* AppDelegate.m */,
 				D23C57731AE9AD8700CD7DAA /* Info.plist */,
@@ -145,6 +194,37 @@
 				D23C578D1AE9AD8700CD7DAA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2499A951AEC12DE002587D5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D23378EB1AEABC7E006D6F42 /* HomeViewController.h */,
+				D23378EC1AEABC7E006D6F42 /* HomeViewController.m */,
+				D2499A961AEC1327002587D5 /* StopwatchViewController.h */,
+				D2499A971AEC1327002587D5 /* StopwatchViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D2C877951AEB4E13004E46A3 /* ConnectionUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				D210F3C41AE9BF4200C77E63 /* ConnectionHelper.h */,
+				D210F3C51AE9BF4200C77E63 /* ConnectionHelper.m */,
+			);
+			name = ConnectionUtilities;
+			sourceTree = "<group>";
+		};
+		D2C877961AEB4E3C004E46A3 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D23379061AEB098C006D6F42 /* PostsTableViewController.h */,
+				D23379071AEB098C006D6F42 /* PostsTableViewController.m */,
+				D23C57981AE9AF9000CD7DAA /* UserTableViewController.h */,
+				D23C57991AE9AF9000CD7DAA /* UserTableViewController.m */,
+			);
+			name = TableViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,8 +307,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D23C577E1AE9AD8700CD7DAA /* Main.storyboard in Resources */,
+				D23378E61AEAB38C006D6F42 /* settings_logo.jpg in Resources */,
+				D2499A9C1AEC14AC002587D5 /* glyphicons-86-repeat.png in Resources */,
+				D2499AB91AEC44F0002587D5 /* background2.jpg in Resources */,
+				D2499AA41AEC1505002587D5 /* background.png in Resources */,
+				D2499A9E1AEC14BB002587D5 /* glyphicons-174-play.png in Resources */,
+				D23378E81AEAB638006D6F42 /* glyphicons-4-user.png in Resources */,
+				D23378E41AEAB119006D6F42 /* glyphicons-281-settings.png in Resources */,
+				D2499A9A1AEC136F002587D5 /* Main.storyboard in Resources */,
+				D23378EF1AEACE8D006D6F42 /* Spiderman.png in Resources */,
+				D2499AA01AEC14C5002587D5 /* glyphicons-176-stop.png in Resources */,
+				D23378EA1AEAB787006D6F42 /* glyphicons-40-notes.png in Resources */,
 				D23C57831AE9AD8700CD7DAA /* LaunchScreen.xib in Resources */,
+				D2499AA21AEC14D0002587D5 /* glyphicons-55-clock.png in Resources */,
 				D23C57801AE9AD8700CD7DAA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,10 +338,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2499A981AEC1327002587D5 /* StopwatchViewController.m in Sources */,
 				D23C579A1AE9AF9000CD7DAA /* UserTableViewController.m in Sources */,
 				D210F3D11AE9DA9100C77E63 /* User.m in Sources */,
 				D23C57781AE9AD8700CD7DAA /* AppDelegate.m in Sources */,
+				D233790B1AEB0AE5006D6F42 /* Post.m in Sources */,
+				D23379081AEB098C006D6F42 /* PostsTableViewController.m in Sources */,
 				D210F3C61AE9BF4200C77E63 /* ConnectionHelper.m in Sources */,
+				D233790F1AEB0C71006D6F42 /* PostsTableViewCell.m in Sources */,
+				D23378ED1AEABC7E006D6F42 /* HomeViewController.m in Sources */,
 				D23C57751AE9AD8700CD7DAA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,14 +370,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D23C577C1AE9AD8700CD7DAA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D23C577D1AE9AD8700CD7DAA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D23C57811AE9AD8700CD7DAA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

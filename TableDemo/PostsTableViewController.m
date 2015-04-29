@@ -1,32 +1,31 @@
 //
-//  UserTableViewController.m
+//  PostsTableViewController.m
 //  TableDemo
 //
-//  Created by Lance Fallon on 4/23/15.
+//  Created by Lance Fallon on 4/24/15.
 //  Copyright (c) 2015 Lance Fallon. All rights reserved.
 //
 
-#import "UserTableViewController.h"
+#import "PostsTableViewController.h"
 #import "ConnectionHelper.h"
-#import "User.h"
+#import "Post.h"
+#import "PostsTableViewCell.h"
 
-@interface UserTableViewController ()
-@property NSArray *users;
-@property (strong, nonatomic) IBOutlet UITableView *myUserTableView;
-
+@interface PostsTableViewController()
+    @property NSArray *posts;
+    @property IBOutlet UITableView *myPostsTableView;
 @end
 
-@implementation UserTableViewController
-
+@implementation PostsTableViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://jsonplaceholder.typicode.com/users"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://jsonplaceholder.typicode.com/posts"]];
     ConnectionHelper *connHelper = [[ConnectionHelper alloc]initWithRequest:request];
     
     //make request to web service, then await callback with data array
     [connHelper makeRequestWithCallback:^void(NSArray *a) {
-        self.users = [[NSArray alloc]initWithArray:a];
-        [self.myUserTableView reloadData];
+        self.posts = [[NSArray alloc]initWithArray:a];
+        [self.myPostsTableView reloadData];
     }];
 }
 
@@ -39,17 +38,23 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [self.users count];
+    return [self.posts count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UserCell" forIndexPath:indexPath];
-    
     //convert the dictionary item located at index[indexPath.row] to a user model then create cell
-    NSDictionary *userDict = [self.users objectAtIndex:indexPath.row];
-    User *user = [[User alloc]initWithName:[userDict objectForKey:@"name"] email:[userDict objectForKey:@"email"]];
-    cell.textLabel.text = [user name];
-    cell.detailTextLabel.text = [user email];
+    NSDictionary *postDict = [self.posts objectAtIndex:indexPath.row];
+    
+    NSString *uidAsString = [postDict objectForKey:@"userId"];
+    NSInteger uid = [uidAsString integerValue];
+    NSString *t = [postDict objectForKey:@"title"];
+    NSString *b = [postDict objectForKey:@"body"];
+    Post *post = [[Post alloc]initWithUserId:uid title:t body:b];
+    
+    //create custom cell, and set values
+    PostsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PostCell" forIndexPath:indexPath];
+    [cell setModel:post];
+    
     return cell;
 }
 
@@ -60,5 +65,4 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-
 @end
